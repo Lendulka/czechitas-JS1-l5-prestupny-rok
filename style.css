@@ -1,0 +1,112 @@
+/* Používáme intuitivní výpočet rozměrů prvků. */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(255, 70, 86);
+  --secondary-color: rgba(16, 156, 74, 0.774);
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 1rem;
+  background: linear-gradient(180deg, rgba(255, 70, 86, 1) 35%, rgba(255, 150, 159, 1) 100%);
+  height: 100vh;
+}
+
+.container {
+  max-width: 30rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin: 1rem auto;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+p:nth-child(3) {
+  margin-top: 0;
+}
+
+.year__form__control {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: center;
+  cursor: pointer;
+}
+
+.year {
+  height: 1.7rem;
+  width: 12rem;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#button-submit {
+  display: block;
+  margin: auto;
+  margin-top: 0.8rem;
+  padding: 0.3rem 1.5rem;
+  font-size: 0.9rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#button-submit:hover {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+}
+
+.year__result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.color {
+  margin: 0;
+  font-weight: 800;
+  text-align: left;
+}
+
+.color--yes {
+  color: var(--secondary-color);
+}
+
+.color--no {
+  color: var(--primary-color);
+}

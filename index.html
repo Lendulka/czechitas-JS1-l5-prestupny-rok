@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js"></script>
+  <title>Přestupný rok</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Přestupný rok</h1>
+
+    <p class="paragraph">Přestupný rok je jednou za&nbsp;čtyři roky. Existuje tedy několik výjimek, ale v&nbsp;podstatě platí, že&nbsp;každý čtvrtý rok má místo obvyklých 365&nbsp;dnů o&nbsp;den víc, tedy v&nbsp;přestupném roce je 366&nbsp;dnů.</p>
+
+    <p class="paragraph">Přestupný rok je uměle vytvořený delší rok. Je to dáno tím, že&nbsp;náš kalendář svou základní délkou neodpovídá tomu, jak dlouho trvá Zemi oběhnout kolem Slunce. Přestupný rok tak vyrovnává rozdíl mezi tzv.&nbsp;tropickým a&nbsp; kalendářním rokem v&nbsp;dlouhém období.</p>
+
+    <form id="year__form">
+
+      <div class="year__form__control">
+        <label for="year">Zadej rok (4 místné číslo):</label>
+        <input type="number" id="year" class="year" required autofocus />
+      </div>
+
+      <button type="submit" id="button-submit">Spočti</button>
+
+    </form>
+
+    <div class="year__result"></div>
+
+  </div>
+</body>
+
+</html>
